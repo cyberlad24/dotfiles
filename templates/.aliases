@@ -1,0 +1,87 @@
+# server
+alias server='open http://localhost:8000 && http-server -p 8000'
+
+# ohmyzsh
+alias zsh_config="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.dotfiles/.ohmyzsh"
+
+# some alias definitions
+alias ll="ls -l"
+alias lla="ls -la"
+alias ls_today="gls -al --time-style=+%D | grep $(date +%D)"
+
+# color ls
+case $( uname -s ) in
+    Linux )
+      eval `dircolors -b` # sets and exports LS_COLORS for bash terminals
+      alias ls='ls --color=auto'
+    ;;
+    Darwin )
+      export LSCOLORS="ExfxcxdxbxEgEdabagacad"
+      alias ls='ls -G'
+    ;;
+esac
+
+# more color support
+alias grep="grep --color=auto"
+alias dir='dir -h --color=auto'
+
+# humanized output
+alias du='du -h'
+alias df='df -h'
+
+# git
+alias gits='git status -sb' # short + branch name
+alias gitl="git log"
+alias gitlp="git ll"
+alias gitd="git diff"
+alias gita="git add"
+alias git-notes="git notes | cut -d' ' -f2 | xargs git notes show"
+
+# shortcuts
+alias h='history'
+
+# Apache Check IPs
+alias apache_ips="egrep -o '\b[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\b' access.log | sort -u"
+
+# Check number of active connections
+alias apache_connections="netstat -plan | grep :80 | wc -l"
+
+# RubyGems
+alias gems='gem search -b'
+alias geml='gem list -l'
+alias gemi='gem install -b'
+alias gemu='gem uninstall'
+
+# tmux
+# Dont loose vim colorscheme in tmux mode
+alias tmux="TERM=screen-256color-bce tmux"
+
+#
+# Functions
+#
+
+# inspect network with arp-scan
+function inspect_network() {
+    sudo arp-scan --interface="$@" --localnet;
+}
+
+# less with numbers
+function catless() {
+    cat -n $1 | less;
+}
+
+# grep through history
+function hf() {
+    history | grep $1
+}
+
+# quick search in a directory for a string ($1).
+function search() {
+    # use -iru to search directories ack usually ignores (like .git)
+    if [ -x /usr/bin/ack-grep ]; then
+        ack-grep -i $1
+    else
+        ack -i $1
+    fi
+}

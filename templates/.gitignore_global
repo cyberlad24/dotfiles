@@ -1,0 +1,18 @@
+*.out               # Node
+*.pid               # Node
+*.pyc               # Compiled Python files
+*.sw                # Swapping files
+.DS_Store           # Folder view configuration files
+.Spotlight-V100     # Files that might appear on external disks
+.Trashes            # Files that might appear on external disks
+._*                 # Thumbnail cache files
+.idea               # atlassian
+.netrwhist          # ViM files
+Desktop.ini         # Folder view configuration files
+Thumbs.db           # Thumbnail cache files
+_backup             # ViM files
+_temp               # ViM files
+atlassian*.xml      # atlassian
+logs                # Node
+node_modules        # Node
+pids                # Node
