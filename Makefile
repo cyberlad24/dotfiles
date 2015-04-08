@@ -138,3 +138,8 @@ install-iterm2-shell-integration:
 
 pre-osx:
 	sudo xcode-select --install
+	brew install caskroom/cask/brew-cask
+	# Quick Look plugins
+	brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+	# TODO: install google-chrome, iterm2, sizeup, webstorm, menumeters, transmission, dropbox, spotify, skype
+	# 	evernote, readkit, type2phone & 1password
