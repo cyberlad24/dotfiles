@@ -141,5 +141,8 @@ pre-osx:
 	brew install caskroom/cask/brew-cask
 	# Quick Look plugins
 	brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+	# TODO: kill finder after installing brew cast packages
+	# defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder 
+	
 	# TODO: install google-chrome, iterm2, sizeup, webstorm, menumeters, transmission, dropbox, spotify, skype
 	# 	evernote, readkit, type2phone & 1password
