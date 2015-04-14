@@ -146,3 +146,7 @@ pre-osx:
 	
 	# TODO: install google-chrome, iterm2, sizeup, webstorm, menumeters, transmission, dropbox, spotify, skype
 	# 	evernote, readkit, type2phone, 1password, vlc
+	
+	# Disable Dashboard Completely	
+	# defaults write com.apple.dashboard mcx-disabled -boolean YES; killall Dock
+
