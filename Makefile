@@ -149,4 +149,12 @@ pre-osx:
 	
 	# Disable Dashboard Completely	
 	# defaults write com.apple.dashboard mcx-disabled -boolean YES; killall Dock
+	
+	# Write in NTFS in OS X
+	# brew cask install osxfuse
+	# brew install ntfs-3g
+	
+	# Create a symlink for mount_ntfs, in order to make drives mount automatically
+	# sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original 
+	# sudo ln -s /usr/local/Cellar/ntfs-3g/2014.2.15/sbin/mount_ntfs /sbin/mount_ntfs
 
