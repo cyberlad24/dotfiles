@@ -145,4 +145,4 @@ pre-osx:
 	# defaults write com.apple.finder QLEnableTextSelection -bool true && killall Finder 
 	
 	# TODO: install google-chrome, iterm2, sizeup, webstorm, menumeters, transmission, dropbox, spotify, skype
-	# 	evernote, readkit, type2phone & 1password
+	# 	evernote, readkit, type2phone, 1password, vlc
