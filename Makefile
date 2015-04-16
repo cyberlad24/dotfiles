@@ -43,21 +43,21 @@ install-homebrew-osx:
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 install-homebrew-packages:
-	brew install ack  						--overwrite # grep-like text finder
+	brew install ack  					--overwrite # grep-like text finder
 	brew install arp-scan 					--overwrite # the ARP scanner
-	brew install coreutils  --default-names --overwrite # most essential UNIX commands
-	brew install git 						--overwrite # git from homebrew
+	brew install coreutils  		--default-names --overwrite # most essential UNIX commands
+	brew install git 					--overwrite # git from homebrew
 	brew install git-extras 				--overwrite # git utilities
-	brew install jsawk 						--overwrite # like awk, but for JSON
-	brew install ngrok 						--overwrite # secure introspectable tunnels to localhost
-	brew install rbenv 						--overwrite # picks a Ruby version
+	brew install jsawk 					--overwrite # like awk, but for JSON
+	brew install ngrok 					--overwrite # secure introspectable tunnels to localhost
+	brew install rbenv 					--overwrite # picks a Ruby version
 	brew install ruby-build					--overwrite # rbenv plugin that provides an rbenv install
-	brew install tig   						--overwrite # git ncurses interface
-	brew install tmux  						--overwrite # terminal multiplexer
-	brew install vim   --override-system-vi --overwrite # vim editor
-	brew install watch 						--overwrite # runs the specified command repeatedly
-	brew install wget 						--overwrite # web get
-	brew install htop						--overwrite # nice top command
+	brew install tig   					--overwrite # git ncurses interface
+	brew install tmux  					--overwrite # terminal multiplexer
+	brew install vim   		   --override-system-vi --overwrite # vim editor
+	brew install watch 					--overwrite # runs the specified command repeatedly
+	brew install wget 					--overwrite # web get
+	brew install htop					--overwrite # nice top command
 
 clean-homebrew:
 	rm -rf /usr/local/Cellar
@@ -73,16 +73,16 @@ clean-ruby:
 
 install-rubygems-packages:
 	gem install compass                     			# open-source CSS authoring framework
-	gem install jekyll				    				# simple, blog-aware, static sites
-	gem install tmuxinator			    				# manage tmux sessions easily
-	gem install gist 			  	    				# post gists
+	gem install jekyll				    		# simple, blog-aware, static sites
+	gem install tmuxinator			    			# manage tmux sessions easily
+	gem install gist 			  	    		# post gists
 
 install-node:
 	git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
 	. ~/.nvm/nvm.sh && nvm install stable && nvm use stable && nvm alias default stable
 
 install-node-packages:
-	. ~/.nvm/nvm.sh && npm install -g bower grunt-cli http-server jshint less
+	. ~/.nvm/nvm.sh && npm install -g bower grunt-cli http-server jshint less yo
 
 clean-node:
 	rm -rf ~/.nvm
@@ -119,16 +119,16 @@ install-ohmyzsh:
 	chsh -s /bin/zsh
 
 clean-ohmyzsh:
-	rm -rf ~/.z											# quick navigation through folders
+	rm -rf ~/.z							# quick navigation through folders
 	rm -rf ~/.zshrc                         			# linked zsh conf file
-	rm -rf ~/.dotfiles/.oh-my-zsh						# in case is already cloned
-	chsh -s /bin/bash 									# change back to bash
+	rm -rf ~/.dotfiles/.oh-my-zsh					# in case is already cloned
+	chsh -s /bin/bash 						# change back to bash
 
 post-install:
-	brew update                                         # just in case
-	brew doctor                                         # check if all went ok with homebrew
-	gist --login 										# configure homebrew gist
-	tmuxinator doctor                                   # check if all went ok with tmuxinator
+	brew update                                         		# just in case
+	brew doctor                                         		# check if all went ok with homebrew
+	gist --login 							# configure homebrew gist
+	tmuxinator doctor                                   		# check if all went ok with tmuxinator
 
 install-wiki:
 	git clone https://github.com/fer/dotfiles.wiki.git ~/.dotfiles/dotfiles.wiki
