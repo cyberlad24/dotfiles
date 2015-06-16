@@ -99,5 +99,8 @@
     default = tracking
 
 [core]
-    editor = <%- editor %>
+    editor = vi 
     excludesfile = ~/.gitignore_global
+
+[url "https://github.com/"]
+	insteadOf = git://github.com/
