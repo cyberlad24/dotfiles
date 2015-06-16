@@ -72,7 +72,7 @@ let NERDTreeShowHidden=1
 " ctrl+p - show hidden files
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_open_new_file = 't'
-
+let mapleader=","
 map <C-l> gt                                    " vim movement left key for tabs
 map <C-h> gT                                    " vim movement right key for tabs
 map <C-c> "+y                                   " copy selection with ctrl+c
