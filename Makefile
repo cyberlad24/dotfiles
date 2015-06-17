@@ -58,7 +58,8 @@ install-homebrew-packages:
 	brew install watch 					--overwrite # runs the specified command repeatedly
 	brew install wget 					--overwrite # web get
 	brew install htop					--overwrite # nice top command
-
+	brew install maven					--overwrite # apache maven
+	
 clean-homebrew:
 	rm -rf /usr/local/Cellar
 	brew prune
