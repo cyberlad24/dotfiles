@@ -132,7 +132,7 @@ post-install:
 	tmuxinator doctor                                   		# check if all went ok with tmuxinator
 
 install-wiki:
-	git clone https://github.com/fer/dotfiles.wiki.git ~/.dotfiles/dotfiles.wiki
+	git clone git@github.com:fer/dotfiles.git ~/.dotfiles/dotfiles.wiki
 
 install-iterm2-shell-integration:
 	curl -L iterm2.com/misc/install_shell_integration.sh | bash
