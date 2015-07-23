@@ -49,6 +49,7 @@ install-homebrew-packages:
 	brew install git 					--overwrite # git from homebrew
 	brew install git-extras 				--overwrite # git utilities
 	brew install jsawk 					--overwrite # like awk, but for JSON
+	brew install keybase                                    --overwrite # command line for keybase.io
 	brew install ngrok 					--overwrite # secure introspectable tunnels to localhost
 	brew install rbenv 					--overwrite # picks a Ruby version
 	brew install ruby-build					--overwrite # rbenv plugin that provides an rbenv install
@@ -129,6 +130,7 @@ post-install:
 	brew update                                         		# just in case
 	brew doctor                                         		# check if all went ok with homebrew
 	gist --login 							# configure homebrew gist
+	keybase-installer                                               # configure keybase.io
 	tmuxinator doctor                                   		# check if all went ok with tmuxinator
 
 install-wiki:
