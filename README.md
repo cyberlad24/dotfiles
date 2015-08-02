@@ -29,3 +29,7 @@ make clean pre-osx install post-install install-wiki
 ```sh
 make clean 
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fer/dotfiles/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
