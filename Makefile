@@ -55,6 +55,7 @@ install-homebrew-packages:
 	brew install ruby-build					--overwrite # rbenv plugin that provides an rbenv install
 	brew install tig   					--overwrite # git ncurses interface
 	brew install tmux  					--overwrite # terminal multiplexer
+	brew install tree					--overwrite # list directories in a tree-like format
 	brew install vim   		   --override-system-vi --overwrite # vim editor
 	brew install watch 					--overwrite # runs the specified command repeatedly
 	brew install wget 					--overwrite # web get
