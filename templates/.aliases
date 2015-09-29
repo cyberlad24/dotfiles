@@ -85,3 +85,12 @@ function search() {
         ack -i $1
     fi
 }
+
+# conversion hex 2 dec and viceversa
+h2d(){
+  echo "ibase=16; $@"|bc
+}
+
+d2h(){
+  echo "obase=16; $@"|bc
+}
