@@ -43,6 +43,7 @@ install-homebrew-osx:
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 install-homebrew-packages:
+	brew install acrogenesis/macchanger/macchanger          --overwrite # macchanger
 	brew install ack  					--overwrite # grep-like text finder
 	brew install arp-scan 					--overwrite # the ARP scanner
 	brew install coreutils  		--default-names --overwrite # most essential UNIX commands
