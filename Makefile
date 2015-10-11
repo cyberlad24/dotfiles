@@ -54,6 +54,7 @@ install-homebrew-packages:
 	brew install ngrok 					--overwrite # secure introspectable tunnels to localhost
 	brew install rbenv 					--overwrite # picks a Ruby version
 	brew install ruby-build					--overwrite # rbenv plugin that provides an rbenv install
+	brew install ssh-copy-id                                --overwrite # use local keys to authorise remotes
 	brew install tig   					--overwrite # git ncurses interface
 	brew install tmux  					--overwrite # terminal multiplexer
 	brew install tree					--overwrite # list directories in a tree-like format
