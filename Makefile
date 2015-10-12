@@ -60,6 +60,7 @@ install-homebrew-packages:
 	brew install tree					--overwrite # list directories in a tree-like format
 	brew install vim   		   --override-system-vi --overwrite # vim editor
 	brew install watch 					--overwrite # runs the specified command repeatedly
+	brew install wakeonlan					--overwirte # wakeonlan
 	brew install wget 					--overwrite # web get
 	brew install htop					--overwrite # nice top command
 	brew install maven					--overwrite # apache maven
