@@ -165,3 +165,7 @@ pre-osx:
 	# sudo mv /sbin/mount_ntfs /sbin/mount_ntfs.original 
 	# sudo ln -s /usr/local/Cellar/ntfs-3g/2014.2.15/sbin/mount_ntfs /sbin/mount_ntfs
 
+
+# mkdir -p ~/bin
+# curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
+# chmod +x ~/bin/tldr
