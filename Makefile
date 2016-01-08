@@ -169,3 +169,8 @@ pre-osx:
 # mkdir -p ~/bin
 # curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr
 # chmod +x ~/bin/tldr
+
+# or
+
+# brew tap tldr-pages/tldr
+# brew install tldr
