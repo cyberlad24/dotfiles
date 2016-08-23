@@ -62,6 +62,7 @@ alias tmux="TERM=screen-256color-bce tmux"
 #
 
 # inspect network with arp-scan
+# https://www.blackmoreops.com/2015/12/31/use-arp-scan-to-find-hidden-devices-in-your-network/
 function inspect_network() {
     sudo arp-scan --interface="$@" --localnet;
 }
